@@ -19,7 +19,11 @@ export default function CalculatorForm() {
   const [fat, setFat] = React.useState(0);
 
   function handleChange(e) {
-    setWeight(parseInt(e.target.value));
+    if ( e.target.value === '' ) {
+      setWeight('');
+    } else {
+      setWeight(parseInt(e.target.value));
+    }
   }
   function handleSubmit(e) {
     e.preventDefault();
