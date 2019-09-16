@@ -13,6 +13,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+label {
+  color: #2c2c54;
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -64,6 +68,20 @@ body {
   color: #2c2c54;
   font-size: 1rem;
   font-weight: bold;
+}
+
+label.Form__radio {
+  display: flex;
+  align-items: center;
+  width: 40%;
+}
+input.Form__input {
+  width: 25%;
+}
+span.Form__span {
+  display: block;
+  width: 75%;
+  margin: 0;
 }
 
 .Result {
